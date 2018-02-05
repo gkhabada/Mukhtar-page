@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8>
+    <title>Мухатар Гаджидадаев</title>
+	
+	
+	<link href="css/fonts.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/screen.css" rel="stylesheet">
+	<link href="css/media.css" rel="stylesheet">
+	
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4.2.1/dist/masonry.pkgd.min.js" type="text/javascript"></script>
+	
+	
+	<script type="text/javascript">
+			
+		$( document ).ready(function() {
+			setInterval(function(){ mas() }, 300);
+			function mas(){
+				$('.gallery__photo').masonry({
+					itemSelector: '.gallery__item'
+				});
+			};	
+			/**************** show more *************************/
+			
+			
+			var items = $('.gallery__item'),
+			per = 10,
+			i = 1,
+			total = 0;
+			$('.show_more').on('click', function(){
+				total = per * (i++);
+				items.slice(0, total).show();
+				$(this)[total >= items.length ? 'hide' : 'show']();
+			}).click();
+		});
+		
+	</script>
+   
+  </head>
+  <body>
+    <div id="wrapper">
+<!-------------------------------- Шапка --------------------------------->
+		
+		<nav class="nav">
+			<div class="nav__inner">
+				<p class="logo" >Gadzhidadaev <br> <span>Mukhtar</span> </p>
+				<div class="menu">
+					<ul class="menu__items">
+						<li class="menu__item"><a class="menu__link menu__home" href="index.html#header">Главная</a></li>
+						<li class="menu__item"><a class="menu__link menu__about-me" href="index.html#about-me">Обо мне</a></li>
+						<li class="menu__item"><a class="menu__link menu__services" href="index.html#service">Услуги</a></li>
+						<li class="menu__item"><a class="menu__link menu__portfolio" href="index.html#portfolio">Портфолио</a></li>
+						<li class="menu__item"><a class="menu__link menu__contacts" href="index.html#contacts">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="nav__bg"></div>
+		</nav>
+				
+
+		
+	
+				<!--------------------- portfolio ------------------>
+		<div class="gallery" >
+
+		<!---	<ul class="portfolio__items section">
+				<li class="portfolio__link"><a href="#">Все работы</a></li>
+				<li class="portfolio__link"><a href="#">Свадьба</a></li>
+				<li class="portfolio__link"><a href="#">Автофото</a></li>
+				<li class="portfolio__link"><a href="#">Пейзаж</a></li>
+				<li class="portfolio__link"><a href="#">Путешествие</a></li>
+				<li class="portfolio__link"><a href="#">Люди</a></li>
+			</ul>
+		
+	-->				
+			
+
+			<div class="gallery__photo">
+				<img src="img/gallery/1.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/2.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/3.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/4.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/5.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/6.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/7.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/8.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/9.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/10.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/11.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/12.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/13.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/14.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/15.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/16.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/17.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/18.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/19.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/20.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/21.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/22.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/23.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/24.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/25.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/26.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/27.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/28.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/29.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/30.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/31.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/32.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/33.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/34.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/35.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/36.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/37.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/38.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/39.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/40.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/41.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/42.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/43.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/44.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/45.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/46.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/47.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/48.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/49.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/50.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/51.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/52.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/53.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/54.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/55.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/56.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/57.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/58.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/59.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/60.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/61.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/62.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/63.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/64.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/65.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/66.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/67.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/68.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/69.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/70.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/71.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/72.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/73.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/74.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/75.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/76.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/77.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/78.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/79.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/80.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/81.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/82.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/83.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/84.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/85.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/86.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/87.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/88.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/89.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/90.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/91.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/92.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/93.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/94.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/95.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/96.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/97.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/98.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/99.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/100.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/101.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/102.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/103.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/104.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/105.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/106.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/107.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/108.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/109.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/110.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/111.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/112.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/113.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/114.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/115.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/116.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/117.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/118.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/119.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/120.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/121.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/122.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/123.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/124.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/125.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/126.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/127.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/128.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/129.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/130.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/131.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/132.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/133.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/134.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/135.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/136.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/137.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/138.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/139.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/140.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/141.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/142.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/143.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/144.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/145.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/146.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/147.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/148.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/149.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/150.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/151.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/152.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/153.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/154.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/155.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/156.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/157.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/158.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/159.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/160.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/161.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/162.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/163.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/164.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/165.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/166.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/167.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/168.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/169.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/170.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/171.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/172.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/173.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/174.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/175.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/176.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/177.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/178.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/179.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/180.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/181.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/182.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/183.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/184.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/185.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/186.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/187.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/188.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/189.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/190.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/191.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/192.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/193.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/194.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/195.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/196.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/197.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/198.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/199.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/200.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/201.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/202.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/203.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/204.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/205.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/206.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/207.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/208.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/209.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/210.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/211.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/212.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/213.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/214.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/215.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/216.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/217.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/218.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/219.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/220.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/221.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/222.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/223.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/224.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/225.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/226.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/227.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/228.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/229.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/230.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/231.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/232.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/233.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/234.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/235.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/236.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/237.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/238.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/239.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/240.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/241.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/242.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/243.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/244.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/245.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/246.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/247.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/248.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/249.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/250.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/251.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/252.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/253.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/254.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/255.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/256.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/257.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/258.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/259.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/260.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/261.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/262.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/263.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/264.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/265.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/266.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/267.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/268.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/269.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/270.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/271.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/272.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/273.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/274.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/275.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/276.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/277.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/278.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/279.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/280.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/281.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/282.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/283.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/284.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/285.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/286.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/287.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/288.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/289.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/290.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/291.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/292.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/293.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/294.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/295.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/296.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/297.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/298.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/299.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/300.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/301.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/302.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/303.jpg" alt="" class="gallery__item">
+				<img src="img/gallery/304.jpg" alt="" class="gallery__item">
+			</div>
+			<div class="show_more">Показать ещё</div>
+
+		
+		
+				
+		</div>
+			
+
+		<div class="footer_wrapper">
+			<div class="footer">
+				<h4> Создание сайтов <a href="http://gkhabada.h1n.ru/" target="_blank">Gkhabada</a>    CopyRight © 2018 by GadzhidadaevGR</h4>
+			</div>
+		</div>
+		
+		
+    </div><!--#wrapper-->	
+  </body>
+</html>
