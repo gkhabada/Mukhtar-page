@@ -1,8 +1,9 @@
-# кэш
+﻿# кэш
 .sass-cache/
 img/
 works/
-
+node_modules/
+gallery1/
 
 
 config.rb

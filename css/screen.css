@@ -1,8 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700,900&subset=cyrillic");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -79,8 +74,8 @@ textarea:focus, input:focus {
 
 .section {
   width: 1020px;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
 }
 
 .hidden {
@@ -97,7 +92,7 @@ textarea:focus, input:focus {
   padding-top: 0px;
   position: fixed;
   top: 0;
-  z-index: 99;
+  z-index: 9;
   width: 100%;
 }
 .nav__bg {
@@ -385,8 +380,9 @@ textarea:focus, input:focus {
   background-image: url(../img/fon2.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   z-index: 1;
-  opacity: .07;
+  opacity: .08;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -481,6 +477,69 @@ textarea:focus, input:focus {
   z-index: 4;
   transition: 0.3s;
   filter: sepia(5%);
+}
+
+/************************************************************/
+.video {
+  position: relative;
+  box-sizing: border-box;
+  background-color: #a29bfe;
+  padding: 30px;
+}
+.video__bg {
+  background-image: url(../img/fon2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  opacity: .09;
+  position: absolute;
+  background-position: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.video h2 {
+  font-size: 52px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #fefefe;
+  display: block;
+  margin-top: 15px;
+  z-index: 2;
+  position: relative;
+  margin-bottom: 40px;
+}
+.video h2 a {
+  transition: 0.2s;
+  color: #c4302b;
+}
+.video h2 a:hover {
+  transition: 0.2s;
+  text-shadow: 1px 2px 7px rgba(196, 48, 43, 0.49);
+}
+.video__items {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  z-index: 2;
+}
+.video__items .video__item {
+  margin: 10px;
+  height: 0;
+  padding-bottom: 16.9%;
+  position: relative;
+  width: 30%;
+}
+.video__items .video__item iframe {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
 }
 
 /************************************************************/
@@ -601,16 +660,73 @@ textarea:focus, input:focus {
   padding: 100px 20px 50px;
   box-sizing: border-box;
 }
+.gallery .gallery__text {
+  font-size: 25px;
+  padding: 0 5%;
+  box-sizing: border-box;
+  color: #e55039;
+  font-weight: 500;
+  text-align: center;
+  margin: 20px auto;
+}
+.gallery .gallery__photo {
+  overflow: hidden;
+}
 .gallery .gallery__photo .gallery__item {
-  display: none;
+  display: block;
   width: 22%;
-  margin: 0 1.4% 30px;
+  margin: 17px 1.4% 15px;
   box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.5);
   position: relative;
 }
 .gallery .gallery__photo .gallery__item:hover {
   transition: 0.3s;
+  cursor: pointer;
   transform: translateY(-17px);
+}
+.gallery .gallery__photo #first_photo {
+  box-shadow: none;
+  width: 0;
+  margin: 0 0.01%;
+}
+.gallery ul {
+  display: flex;
+  justify-content: center;
+}
+.gallery ul .gallery__link {
+  padding: 17px 30px;
+  border: 2px solid #fefefe;
+  display: block;
+  width: 245px;
+  text-align: center;
+  margin: 35px 2%;
+  transition: 0.5s;
+}
+.gallery ul .gallery__link a {
+  color: #fefefe;
+  transition: 0.5s;
+  font-size: 18px;
+  font-weight: 400;
+}
+.gallery ul .gallery__link:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 100px;
+}
+.gallery ul .gallery__link:hover a {
+  transition: 0.5s;
+  font-weight: 500;
+  color: #66cdaa;
+}
+.gallery ul .galley_active {
+  background-color: #fefefe;
+  border-radius: 100px;
+  transition: 0.5s;
+}
+.gallery ul .galley_active a {
+  color: #00cec9;
+  font-weight: 500;
 }
 .gallery .show_more {
   font-size: 17px;
@@ -631,4 +747,70 @@ textarea:focus, input:focus {
   color: #66cdaa;
   border-radius: 100px;
   font-weight: 500;
+}
+
+.wrapper__gallery .modal {
+  display: none;
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+  position: fixed;
+  left: 5%;
+  top: 5%;
+  z-index: 101;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper__gallery .overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hideen;
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.wrapper__gallery .open {
+  display: flex;
+}
+.wrapper__gallery progress {
+  position: fixed;
+  left: 0;
+  top: 65px;
+  width: 100%;
+  z-index: 10;
+  height: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: #ec9c5d;
+}
+.wrapper__gallery progress::-webkit-progress-bar {
+  background: transparent;
+  border-radius: 5px;
+}
+.wrapper__gallery progress::-webkit-progress-value {
+  background: #ec9c5d;
+  border-radius: 5px;
+}
+.wrapper__gallery progress::-moz-progress-bar {
+  background: #ec9c5d;
+  border-radius: 5px;
+}
+.wrapper__gallery .progress-container {
+  width: 100%;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  display: block;
+}
+.wrapper__gallery .progress-bar {
+  background: #ec9c5d;
+  width: 0%;
+  display: block;
+  height: inherit;
 }
