@@ -1,73 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset=utf-8>
-    <title>Мухатар Гаджидадаев</title>
-	<link rel="icon" type="image/png" href="img/icon.png" sizes="32x32" />
-	
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-	
-	<link href="css/fonts.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700,900&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/screen.css" rel="stylesheet">
-	<link href="css/media.css" rel="stylesheet">
-	
-	<script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/script.js" type="text/javascript"></script>
+<template lang="html">
+  <div id="wrapper">
 
-
-	  <style>
-		  .about-me .about-me__info .about-me__info__inner {
-			  width: 640px;
-		  }
-		  .about-me .about-me__info .about-me__info__inner h3 {
-			  font-weight: 400;
-		  }
-		  .about-me .about-me__info .about-me__info__inner {
-			  padding-top: 30px;
-		  }
-		  .about-me .about-me__info .about-me__info__inner p{
-			  margin-top: 7px;
-			  text-indent: 25px;
-		  }
-		  .about-me .about-me__info .about-me__info__inner span{
-			  font-weight: 500;
-		  }
-
-		  .nav .menu__item {
-			  margin-right: 29px;
-
-		  }
-
-	  </style>
-   
-  </head>
-  <body>
-    <div id="wrapper">
-
-		
-<!-------------------------------------- Шапка -------------------------------------->
-		
-		<nav class="nav">
-			<div class="nav__inner">
-				<a href="#header"><p class="logo" >Gadzhidadaev <br> <span>Mukhtar</span> </p></a>
-				<div class="menu">
-					<ul class="menu__items">
-						<li class="menu__item"><a class="menu__link menu__home" href="#header">Главная</a></li>
-						<li class="menu__item"><a class="menu__link menu__about-me" href="#about-me">Обо мне</a></li>
-						<li class="menu__item"><a class="menu__link menu__services" href="#service">Услуги</a></li>
-						<li class="menu__item"><a class="menu__link menu__portfolio" href="#portfolio">Портфолио</a></li>
-						<li class="menu__item"><a class="menu__link menu__contacts" href="#contacts">Контакты</a></li>
-						<li class="menu__item menu__item__gallery"><a class="menu__link1 menu__gallery" href="gallery.html">Перейти в галерею</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="nav__bg"></div>
-		</nav>
-		
+ <!-- Шапка -->
 		<header class="header" id="header">
-		
-			<div class="header__slideshow">	
+
+			<div class="header__slideshow">
 				<button class="slide_arrow slide_prew">&lt;</button>
 				<button class="slide_arrow slide_next">&gt;</button>
 				<div class="header__slide slide1 showed"></div>
@@ -76,11 +13,9 @@
 				<div class="header__slide slide4"></div>
 				<div class="header__slide slide5"></div>
 			</div>
-			
 		</header>
-			
-			
-<!------------------------------------- about-me ------------------------------------>
+
+ <!-- about-me  -->
 		<div class="about-me" id="about-me">
 			<div class="about-me__info">
 				<div class="about-me__info__bg"></div>
@@ -94,12 +29,9 @@
 				</div>
 			</div>
 			<div class="about-me__photo"></div>
-			
-			
 		</div>
-		
-		
-<!------------------------------------- service ------------------------------------->
+
+ <!-- service  -->
 		<div class="service" id="service">
 			<div class="service__bg"></div>
 			<div class="service__inner">
@@ -139,15 +71,12 @@
 					</a>
 				</div>
 			</div>
-
 		</div>
-		
-		
-<!------------------------------------ portfolio ------------------------------------>
+
+ <!-- portfolio  -->
 		<div class="portfolio" id="portfolio">
 			<h2>Мои проекты</h2>
-
-			<div class="works">				
+			<div class="works">
 				<div class="portfolio__inner">
 					<div class="portfolio__photo">
 						<img src="img/l1.jpg" alt="">
@@ -157,17 +86,15 @@
 						<img src="img/l5.jpg" alt="">
 						<img src="img/l6.jpg" alt="">
 						<img src="img/l7.jpg" alt="">
-						<img src="img/l8.jpg" alt="">					
+						<img src="img/l8.jpg" alt="">
 						<img src="img/l9.jpg" alt="">
 					</div>
-
 					<a href="gallery.html" class="portfolio__show-all">Перейти в галерею</a>
-				</div>	
+				</div>
 			</div>
 		</div>
-		
-	
-<!------------------------------------- video ------------------------------------->
+
+ <!-- video  -->
 		<div class="video">
 			<div class="video__bg"></div>
 			<h2>Видео с моего<a href="https://www.youtube.com/channel/UCCFpgr1NPq9aeejnrSR0VxA/videos" target="_blank"> youtube </a>канала</h2>
@@ -184,8 +111,7 @@
 			</div>
 		</div>
 
-	
-<!------------------------------------ contacts ------------------------------------->
+ <!-- contacts  -->
 		<div class="contacts" id="contacts">
 			<div class="contacts__soc">
 				<div class="contacts__soc__item soc__inst"><a href="https://www.instagram.com/mukhtar_gadzhidadaev/"  target="_blank"><i class="fa fa-instagram"></i>instagram</a></div>
@@ -194,15 +120,15 @@
 			</div>
 			<div class="contacts__map">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6991.497842226445!2d46.70722579441256!3d42.54334245996748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1517558780080" frameborder="0" style="border:0" allowfullscreen></iframe>
-				<div class="footer">
-					<h4> Создание сайтов <a href="http://gkhabada.h1n.ru/" target="_blank">Gkhabada</a>    CopyRight © 2018 by GadzhidadaevGR</h4>
-				</div>
 			</div>
-			
 		</div>
-		
-		
-		
-    </div><!--#wrapper-->	
-  </body>
-</html>
+  </div>
+</template>
+
+<script>
+export default {
+}
+</script>
+
+<style lang="css" scoped>
+</style>
