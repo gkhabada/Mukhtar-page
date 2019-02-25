@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Header></Header>
+    <!-- <Header></Header> -->
     <router-view></router-view>
-    <Footer></Footer>
+    <!-- <Footer></Footer> -->
   </div>
 </template>
 
@@ -22,6 +22,6 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="">
 
 </style>

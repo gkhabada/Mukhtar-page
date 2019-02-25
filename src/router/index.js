@@ -1,15 +1,15 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Router from 'vue-router'
 
-import Home from '../components/Home.vue'
-import Car from '../components/Car.vue'
-import Landscape from '../components/Landscape.vue'
-import Wedding from '../components/Wedding.vue'
-import People from '../components/People.vue'
+import Home from '@/components/Home.vue'
+import Car from '@/components/Car.vue'
+import Landscape from '@/components/Landscape.vue'
+import Wedding from '@/components/Wedding.vue'
+import People from '@/components/People.vue'
 
-Vue.use(VueRouter)
+Vue.use(Router)
 
-export default new VueRouter({
+export default new Router({
   routes: [
     {
       path: '/',
