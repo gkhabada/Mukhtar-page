@@ -39,7 +39,7 @@
 				<div class="service__items">
 					<a href="gallery.html">
 						<div class="service__item">
-							<img src="img/wedding.jpg" alt="">
+							<img src="../assets/img/wedding.jpg" alt="">
 							<div>
 								<h4>Свадебные фотографии</h4>
 							</div>
@@ -47,7 +47,7 @@
 					</a>
 					<a href="gallery.html">
 						<div class="service__item">
-							<img src="img/landscape.jpg" alt="">
+							<img src="../assets/img/landscape.jpg" alt="">
 							<div>
 								<h4>Пейзаж</h4>
 							</div>
@@ -55,7 +55,7 @@
 					</a>
 					<a href="gallery.html">
 						<div class="service__item">
-							<img src="img/auto.jpg" alt="">
+							<img src="../assets/img/auto.jpg" alt="">
 							<div>
 								<h4>Автофото</h4>
 							</div>
@@ -63,7 +63,7 @@
 					</a>
 					<a href="gallery.html">
 						<div class="service__item">
-							<img src="img/people.jpg" alt="">
+							<img src="../assets/img/people.jpg" alt="">
 							<div>
 								<h4>Люди (мероприятие)</h4>
 							</div>
@@ -79,15 +79,15 @@
 			<div class="works">
 				<div class="portfolio__inner">
 					<div class="portfolio__photo">
-						<img src="img/l1.jpg" alt="">
-						<img src="img/l2.jpg" alt="">
-						<img src="img/l3.jpg" alt="">
-						<img src="img/l4.jpg" alt="">
-						<img src="img/l5.jpg" alt="">
-						<img src="img/l6.jpg" alt="">
-						<img src="img/l7.jpg" alt="">
-						<img src="img/l8.jpg" alt="">
-						<img src="img/l9.jpg" alt="">
+						<img src="../assets/img/l1.jpg" alt="">
+						<img src="../assets/img/l2.jpg" alt="">
+						<img src="../assets/img/l3.jpg" alt="">
+						<img src="../assets/img/l4.jpg" alt="">
+						<img src="../assets/img/l5.jpg" alt="">
+						<img src="../assets/img/l6.jpg" alt="">
+						<img src="../assets/img/l7.jpg" alt="">
+						<img src="../assets/img/l8.jpg" alt="">
+						<img src="../assets/img/l9.jpg" alt="">
 					</div>
 					<a href="gallery.html" class="portfolio__show-all">Перейти в галерею</a>
 				</div>
@@ -127,6 +127,15 @@
 
 <script>
 export default {
+  mounted() {
+    new Slider({
+      images: '.header__slide',
+      btnPrev: '.slide_prew',
+      btnNext: '.slide_next',
+      auto: true,
+      rate: 7000
+    });
+  }
 }
 </script>
 
