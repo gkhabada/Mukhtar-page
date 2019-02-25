@@ -66,13 +66,38 @@ module.exports = {
         }
       },
       {
-            test: /\.scss$/,
+        test: /\.scss?$/,
+        oneOf: [
+          {
             use: [
-                "style-loader", // creates style nodes from JS strings
-                "css-loader", // translates CSS into CommonJS
-                "sass-loader" // compiles Sass to CSS, using Node Sass by default
+              'vue-style-loader',
+              {
+                loader: 'css-loader',
+                options: { minimize: 'production' }
+              },
+              {
+                loader: 'postcss-loader',
+                options: {
+                  plugins: [
+                    require('autoprefixer')({
+                      browsers: ['last 3 versions', 'iOS >= 8', 'Android >= 4']
+                    })
+                  ]
+                }
+              },
+              'sass-loader'
             ]
-        }
+          }
+        ]
+      }
+      // {
+      //       test: /\.scss$/,
+      //       use: [
+      //           "style-loader", // creates style nodes from JS strings
+      //           "css-loader", // translates CSS into CommonJS
+      //           "sass-loader" // compiles Sass to CSS, using Node Sass by default
+      //       ]
+      //   }
     ]
   },
   node: {

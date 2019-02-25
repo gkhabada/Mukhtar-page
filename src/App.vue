@@ -1,13 +1,13 @@
 <template>
-  <div id="app">
-    <!-- <Header></Header> -->
+  <div>
+    <Header></Header>
     <router-view></router-view>
-    <!-- <Footer></Footer> -->
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-import './sass/screen.scss'
+// import './assets/sass/screen.scss'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 export default {
