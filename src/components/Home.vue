@@ -2,7 +2,7 @@
   <div id="wrapper">
 
  <!-- Шапка -->
-		<header class="header" id="header">
+		<!-- <header class="header" id="header">
 
 			<div class="header__slideshow">
 				<button class="slide_arrow slide_prew">&lt;</button>
@@ -13,7 +13,7 @@
 				<div class="header__slide slide4"></div>
 				<div class="header__slide slide5"></div>
 			</div>
-		</header>
+		</header> -->
 
  <!-- about-me  -->
 		<div class="about-me" id="about-me">
@@ -39,7 +39,7 @@
 				<div class="service__items">
 					<a href="gallery.html">
 						<div class="service__item">
-							<img src="../assets/img/wedding.jpg" alt="">
+							<img src="../assets/wedding.jpg" alt="">
 							<div>
 								<h4>Свадебные фотографии</h4>
 							</div>
@@ -47,7 +47,7 @@
 					</a>
 					<a href="gallery.html">
 						<div class="service__item">
-							<img src="../assets/img/landscape.jpg" alt="">
+							<img src="../assets/landscape.jpg" alt="">
 							<div>
 								<h4>Пейзаж</h4>
 							</div>
@@ -55,7 +55,7 @@
 					</a>
 					<a href="gallery.html">
 						<div class="service__item">
-							<img src="../assets/img/auto.jpg" alt="">
+							<img src="../assets/auto.jpg" alt="">
 							<div>
 								<h4>Автофото</h4>
 							</div>
@@ -63,7 +63,7 @@
 					</a>
 					<a href="gallery.html">
 						<div class="service__item">
-							<img src="../assets/img/people.jpg" alt="">
+							<img src="../assets/people.jpg" alt="">
 							<div>
 								<h4>Люди (мероприятие)</h4>
 							</div>
@@ -79,15 +79,15 @@
 			<div class="works">
 				<div class="portfolio__inner">
 					<div class="portfolio__photo">
-						<img src="../assets/img/l1.jpg" alt="">
-						<img src="../assets/img/l2.jpg" alt="">
-						<img src="../assets/img/l3.jpg" alt="">
-						<img src="../assets/img/l4.jpg" alt="">
-						<img src="../assets/img/l5.jpg" alt="">
-						<img src="../assets/img/l6.jpg" alt="">
-						<img src="../assets/img/l7.jpg" alt="">
-						<img src="../assets/img/l8.jpg" alt="">
-						<img src="../assets/img/l9.jpg" alt="">
+						<img src="../assets/l1.jpg" alt="">
+						<img src="../assets/l2.jpg" alt="">
+						<img src="../assets/l3.jpg" alt="">
+						<img src="../assets/l4.jpg" alt="">
+						<img src="../assets/l5.jpg" alt="">
+						<img src="../assets/l6.jpg" alt="">
+						<img src="../assets/l7.jpg" alt="">
+						<img src="../assets/l8.jpg" alt="">
+						<img src="../assets/l9.jpg" alt="">
 					</div>
 					<a href="gallery.html" class="portfolio__show-all">Перейти в галерею</a>
 				</div>

@@ -1,4 +1,4 @@
-@import "compass/reset";
+// @import "compass/reset";
 //@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700,900&subset=cyrillic');
 
 $medium: 'mullermedium';
@@ -192,22 +192,22 @@ outline: none;
             opacity: 1;
         }
         .slide1 {
-            // background-image: url(../img/slide1.jpg);
+            // background-image: url(../assets/slide1.jpg);
         }
         .slide2 {
-            // background-image: url(../img/slide2.jpg);
+            // background-image: url(../assets/slide2.jpg);
         }
         .slide3 {
-            // background-image: url(../img/slide3.jpg);
+            // background-image: url(../assets/slide3.jpg);
         }
         .slide4 {
-            // background-image: url(../img/slide4.jpg);
+            // background-image: url(../assets/slide4.jpg);
         }
         .slide5 {
-            // background-image: url(../img/slide5.jpg);
+            // background-image: url(../assets/slide5.jpg);
         }
         .slide6 {
-            // background-image: url(../img/slide6.jpg);
+            // background-image: url(../assets/slide6.jpg);
         }
     }
 
@@ -233,7 +233,7 @@ outline: none;
         color: #fff;
 
         .about-me__info__bg {
-            // background-image: url(../img/fon1.png);
+            // background-image: url(../assets/fon1.png);
             background-repeat: no-repeat;
             background-size: cover;
             z-index: 1;
@@ -273,7 +273,7 @@ outline: none;
     .about-me__photo {
         height: 555px;
         min-width: 49.999%;
-        // background-image: url(../img/about.jpg);
+        // background-image: url(../assets/about.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -348,7 +348,7 @@ outline: none;
     }
 
     &__bg {
-        // background-image: url(../img/fon2.png);
+        // background-image: url(../assets/fon2.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -471,7 +471,7 @@ outline: none;
     padding: 30px;
 
     &__bg {
-        // background-image: url(../img/fon2.png);
+        // background-image: url(../assets/fon2.png);
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 1;
@@ -776,48 +776,47 @@ outline: none;
     .open {
         display: flex;
     }
+}
 
+progress{
+    position:fixed;
+    left:0;
+    top:65px;
+    width:100%;
+    z-index: 10;
+    height:5px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    border:none;
+    background:transparent;
+    color:#ec9c5d;
 
-    progress{
-        position:fixed;
-        left:0;
-        top:65px;
-        width:100%;
-        z-index: 10;
-        height:5px;
-        -webkit-appearance:none;
-        -moz-appearance:none;
-        appearance:none;
-        border:none;
-        background:transparent;
-        color:#ec9c5d;
-
-    }
-    progress::-webkit-progress-bar{
-        background:transparent;
-        border-radius:5px;
-    }
-    progress::-webkit-progress-value{
-        background:#ec9c5d;
-        border-radius:5px;
-    }
-    progress::-moz-progress-bar{
-        background:#ec9c5d;
-        border-radius:5px;
-    }
-    .progress-container{
-        width:100%;
-        background:transparent;
-        position:fixed;
-        top:0;
-        left:0;
-        height:5px;
-        display:block;
-    }
-    .progress-bar{
-        background:#ec9c5d;
-        width:0%;
-        display:block;
-        height:inherit;
-    }
+}
+progress::-webkit-progress-bar{
+    background:transparent;
+    border-radius:5px;
+}
+progress::-webkit-progress-value{
+    background:#ec9c5d;
+    border-radius:5px;
+}
+progress::-moz-progress-bar{
+    background:#ec9c5d;
+    border-radius:5px;
+}
+.progress-container{
+    width:100%;
+    background:transparent;
+    position:fixed;
+    top:0;
+    left:0;
+    height:5px;
+    display:block;
+}
+.progress-bar{
+    background:#ec9c5d;
+    width:0%;
+    display:block;
+    height:inherit;
 }

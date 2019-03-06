@@ -5,33 +5,33 @@
 
     <p class="gallery__text">Обращаем ваше внимание на то, что качество изображений уменьшено для увеличения скорости подгрузки картинок. </p>
     <div class="gallery__photo">
-      <img src="../assets/img/gallery/p6.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p27.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p7.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p5.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p3.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p4.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p20.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p21.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p22.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p19.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p8.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p9.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p10.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p16.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p17.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p18.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p1.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p2.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p11.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p12.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p13.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p14.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p15.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p25.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p26.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p23.jpg" alt="" class="gallery__item people">
-      <img src="../assets/img/gallery/p24.jpg" alt="" class="gallery__item people">
+      <img src="../assets/gallery/p6.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p27.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p7.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p5.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p3.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p4.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p20.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p21.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p22.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p19.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p8.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p9.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p10.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p16.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p17.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p18.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p1.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p2.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p11.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p12.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p13.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p14.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p15.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p25.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p26.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p23.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
+      <img src="../assets/gallery/p24.jpg" alt="фото людей Гаджидадаев" class="gallery__item people">
     </div>
   </div>
 

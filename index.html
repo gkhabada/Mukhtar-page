@@ -90,36 +90,6 @@
 
         });
 
-        /********************   открытие или увеличение изображений  ************************/
-
-        modal = $('.modal');
-        overlay = $('.overlay');
-
-        $('.gallery__item').click(function (event) {
-
-            let thisImg = (event.target);
-            console.log(thisImg);
-
-            $(thisImg).clone().appendTo($(modal));
-            $(modal).children().css({"top": "auto", "left": "auto", "height": "100%", "position": "relative"});
-            overlay.addClass('open');
-            modal.addClass('open');
-
-        });
-
-        $('.overlay').click(function () {
-            $(modal).children().remove();
-            overlay.removeClass('open');
-            modal.removeClass('open');
-        });
-
-        $('.modal').click(function () {
-            $(modal).children().remove();
-            overlay.removeClass('open');
-            modal.removeClass('open');
-        });
-
-
         /*****************************   прогресс бар  ****************************************/
 
         $(function() {
@@ -142,6 +112,7 @@
   </head>
   <body>
     <div id="app"></div>
+    
     <!-- built files will be auto injected -->
   </body>
 </html>
