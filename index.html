@@ -3,116 +3,32 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>mukhtar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>Mukhtar Gadzhidadaev</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript">
-    $(document).ready(function() {
-
-      $('.menu__link').click(function(event) {
-        event.preventDefault();
-        var link =  $(this).attr('href');
-        $('html, body').animate({ scrollTop: $(link).offset().top - 70 }, 800);
-      });
-
-      var w = $('.portfolio__photo img').css('width');
-      var h = parseInt(w) / 100 *67;
-      $('.portfolio__photo img').css('height', h + 'px');
-      $(window).resize(function(){
+      $( document ).ready(function() {
         var w = $('.portfolio__photo img').css('width');
         var h = parseInt(w) / 100 *67;
         $('.portfolio__photo img').css('height', h + 'px');
-      });
-
-
-    /**************** header slideshow *****************************/
-
-      function Slider(obj) {
-        this.images = document.querySelectorAll(obj.images);
-        this.auto = obj.auto;
-        this.btnPrev = obj.btnPrev;
-        this.btnNext = obj.btnNext;
-        this.rate = obj.rate || 1000;
-        var i = 0;
-        var slider = this;
-        this.prev = function () {
-          slider.images[i].classList.remove('showed');
-          i--;
-
-          if (i < 0) {
-            i = slider.images.length - 1;
-          }
-
-          slider.images[i].classList.add('showed');
-        }
-        this.next = function () {
-          slider.images[i].classList.remove('showed');
-          i++;
-
-          if (i >= slider.images.length) {
-            i = 0;
-          }
-
-          slider.images[i].classList.add('showed');
-        }
-        document.querySelector(slider.btnPrev).onclick = slider.prev;
-        document.querySelector(slider.btnNext).onclick = slider.next;
-        if(slider.auto)	{
-          setInterval(slider.next, slider.rate);
-        }
-      }
-
-
-
-      });
-
-
-    $( document ).ready(function() {
-
-
-
-
-
-        /***************************   фильт изображений   ***********************************/
-        let allItems = $('.gallery__item');
-        let valueLink = 'gallery__item';
-
-
-        $('.gallery__link').on('click', function(){
-
-            $('.gallery__link').removeClass('galley_active');
-            $(this).addClass('galley_active');
-
-            valueLink = $(this).attr("value");
-            allItems.hide();
-            allItems.first().show();
-            allItems.filter( $('.' + valueLink)).show();
-
+        $(window).resize(function(){
+          var w = $('.portfolio__photo img').css('width');
+          var h = parseInt(w) / 100 *67;
+          $('.portfolio__photo img').css('height', h + 'px');
         });
 
-        /*****************************   прогресс бар  ****************************************/
-
-        $(function() {
-            $(window).on("scroll resize", function() {
-                var o = $(window).scrollTop() / ($(document).height() - $(window).height());
-                $(".progress-bar").css({
-                    "width": (100 * o | 0) + "%"
-                });
-                $('progress')[0].value = o;
-            })
-        });
-
-
-
-    });
-
-
-
+        $(window).on("scroll resize", function() {
+            var o = $(window).scrollTop() / ($(document).height() - $(window).height());
+            $(".progress-bar").css({
+                "width": (100 * o | 0) + "%"
+            });
+            $('progress')[0].value = o;
+        })
+      });
     </script>
   </head>
   <body>
     <div id="app"></div>
-    
+
     <!-- built files will be auto injected -->
   </body>
 </html>

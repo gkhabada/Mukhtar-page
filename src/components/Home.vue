@@ -37,38 +37,38 @@
 			<div class="service__inner">
 				<h2>Услуги</h2>
 				<div class="service__items">
-					<a href="gallery.html">
-						<div class="service__item">
+          <router-link :to="{ name: 'wedding'}">
+            <div class="service__item">
 							<img src="../assets/wedding.jpg" alt="">
 							<div>
 								<h4>Свадебные фотографии</h4>
 							</div>
 						</div>
-					</a>
-					<a href="gallery.html">
-						<div class="service__item">
+          </router-link>
+          <router-link :to="{ name: 'landscape'}">
+            <div class="service__item">
 							<img src="../assets/landscape.jpg" alt="">
 							<div>
 								<h4>Пейзаж</h4>
 							</div>
 						</div>
-					</a>
-					<a href="gallery.html">
-						<div class="service__item">
+          </router-link>
+          <router-link :to="{ name: 'car'}">
+            <div class="service__item">
 							<img src="../assets/auto.jpg" alt="">
 							<div>
 								<h4>Автофото</h4>
 							</div>
 						</div>
-					</a>
-					<a href="gallery.html">
-						<div class="service__item">
+          </router-link>
+          <router-link :to="{ name: 'people'}">
+            <div class="service__item">
 							<img src="../assets/people.jpg" alt="">
 							<div>
-								<h4>Люди (мероприятие)</h4>
+								<h4>Люди (мероприятия)</h4>
 							</div>
-					</div>
-					</a>
+		       </div>
+          </router-link>
 				</div>
 			</div>
 		</div>
@@ -128,13 +128,13 @@
 <script>
 export default {
   mounted() {
-    new Slider({
-      images: '.header__slide',
-      btnPrev: '.slide_prew',
-      btnNext: '.slide_next',
-      auto: true,
-      rate: 7000
-    });
+    // new Slider({
+    //   images: '.header__slide',
+    //   btnPrev: '.slide_prew',
+    //   btnNext: '.slide_next',
+    //   auto: true,
+    //   rate: 7000
+    // });
   }
 }
 </script>
