@@ -93,81 +93,20 @@ fieldset {border: 0; margin: 0;padding: 0;}textarea {resize: vertical;}.chromefr
   .header {
       position: relative;
       width: 100%;
-      height: 1000px;
-      position: relative;
-
-      .header__slideshow {
+      height: 800px;
+      &__inner {
+        h1 {
+          font-size: 48px;
           position: relative;
-          height: 100%;
-          width: 100%;
-          .slide_arrow {
-              border: none;
-              position: absolute;
-              width: 15%;
-              height: 100%;
-              top: 0;
-              opacity: .5;
-              box-sizing: border-box;
-              font-size: 70px;
-              color: transparent;
-              transition: 0.2s;
-              z-index: 10;
-              &:hover {
-                  transition: 0.2s;
-                  opacity: .8;
-                  color: #fff;
-                  cursor: pointer;
-
-              }
-              &:hover, &:active, &:focus {
-                  outline: none;
-              }
-          }
-          .slide_prew {
-              padding-right: 70px;
-              left: 0;
-              background: -moz-linear-gradient(left, #000000 0%, transparent 100%);
-              background: -webkit-linear-gradient(left, #000000 0%,transparent 100%);
-              background: linear-gradient(to right, #000000 0%,transparent 100%);
-          }
-          .slide_next {
-              padding-left: 70px;
-              right: 0;
-              background: -moz-linear-gradient(right, transparent 0%, #000000 100%);
-              background: -webkit-linear-gradient(right, transparent 0%, #000000 100%);
-              background: linear-gradient(to right, transparent 0%, #000000 100%);
-          }
-          .header__slide {
-              position: absolute;
-              z-index: 1;
-              width: 100%;
-              height: 100%;
-              top: 0;
-              left: 0;
-              background-position: center center;
-              background-repeat: no-repeat;
-              background-size: cover;
-              transition: 0.7s;
-              opacity: 0;
-          }
-          .showed {
-              opacity: 1;
-          }
-          .slide1 {
-              background-image: url(./assets/slide1.jpg);
-          }
-          .slide2 {
-              background-image: url(./assets/slide2.jpg);
-          }
-          .slide3 {
-              background-image: url(./assets/slide3.jpg);
-          }
-          .slide4 {
-              background-image: url(./assets/slide4.jpg);
-          }
-          .slide5 {
-              background-image: url(./assets/slide5.jpg);
-          }
+          left: 80px;
+          top: 400px;
+          font-family: 'Archivo Black', sans-serif;
+        }
+      }
+      img{
+        position: absolute;
+        right: 0;
+        bottom: -27px;
       }
 
 
@@ -177,7 +116,6 @@ fieldset {border: 0; margin: 0;padding: 0;}textarea {resize: vertical;}.chromefr
 
   /*****************************************************************/
   .about-me {
-      padding-top: 70px;
       height: 640px;
       display: flex;
       overflow: hidden;
@@ -187,6 +125,7 @@ fieldset {border: 0; margin: 0;padding: 0;}textarea {resize: vertical;}.chromefr
 
       .about-me__info {
           display: inline-block;
+          padding-top: 70px;
           height: 640px;
           position: relative;
           min-width: 49.999%;
@@ -204,11 +143,11 @@ fieldset {border: 0; margin: 0;padding: 0;}textarea {resize: vertical;}.chromefr
               height: 100%;
           }
           .about-me__info__inner {
-              width: 540px;
+              width: 650px;
               padding: 15px;
               position: relative;
               z-index: 3;
-              float: right;
+              float: left;
               h2 {
                   font-size: 36px;
                   font-weight: 700;
@@ -216,15 +155,17 @@ fieldset {border: 0; margin: 0;padding: 0;}textarea {resize: vertical;}.chromefr
               }
 
               h3 {
-                  font-size: 18px;
+                  font-size: 20px;
+                  line-height: 1.3;
                   font-weight: 500;
                   margin-bottom: 15px;
               }
 
               p {
-                  font-size: 16px;
-                  line-height: 1.4;
+                  font-size: 18px;
+                  line-height: 1.5;
                   font-weight: 400;
+                  text-align: justify;
               }
           }
 
