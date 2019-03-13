@@ -194,7 +194,7 @@ export default {
         height:inherit;
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 700px) {
 
       .header_burger {
         display: block;
@@ -207,7 +207,7 @@ export default {
       .nav {
         z-index: 11;
         .logo {
-            left: 15px;
+          left: 15px;
         }
         .menu {
           width: 100%;
