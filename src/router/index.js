@@ -6,6 +6,7 @@ import Car from '@/components/Car.vue'
 import Landscape from '@/components/Landscape.vue'
 import Wedding from '@/components/Wedding.vue'
 import People from '@/components/People.vue'
+import NotFound from '@/components/NotFound.vue'
 
 Vue.use(Router)
 
@@ -35,6 +36,14 @@ export default new Router({
       path: '/people',
       name: 'people',
       component: People
+    },
+    {
+      path: '/404',
+      name: '404',
+      component: NotFound,
+    }, {
+      path: '*',
+      redirect: '/404'
     }
   ],
   mode: 'history'
