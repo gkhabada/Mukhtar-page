@@ -22,10 +22,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$medium: 'mullermedium';
-$extrabold: 'mullerextrabold';
 .footer_wrapper {
     position: relative;
+    font-family: 'Roboto', sans-serif;
     height: 90px;
     .footer {
         background-color: rgba(#000, .7);
@@ -38,13 +37,14 @@ $extrabold: 'mullerextrabold';
             margin: 0;
             text-align: center;
             line-height: 90px;
-            font-size: 20px;
+            font-size: 18px;
             color: #fff;
             font-weight: 300;
+            letter-spacing: .05em;
             a {
                 font-weight: 500;
                 color: #23c869;
-                font-family: $medium;
+                font-weight: 600;
                 text-transform: uppercase;
                 margin: 0 10px;
             }

@@ -31,14 +31,22 @@
         <span class="progress-bar"></span>
       </div>
     </progress>
-    <div class="modal"></div>
-    <div class="overlay"></div>
+    <div class="modal" @click="close()"></div>
+    <div class="overlay" @click="close()"></div>
   </nav>
 </template>
 
 <script>
-
 export default {
+  methods: {
+    close() {
+      let modal = $('.modal');
+      let overlay = $('.overlay');
+      $(modal).children().remove();
+      overlay.removeClass('open');
+      modal.removeClass('open');
+    }
+  }
 }
 </script>
 

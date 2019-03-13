@@ -27,11 +27,9 @@
       <img src="../assets/gallery/a2.jpg" alt="автофото Гаджидадаев" class="gallery__item auto" @click="openImage($event)">
       <img src="../assets/gallery/a3.jpg" alt="автофото Гаджидадаев" class="gallery__item auto" @click="openImage($event)">
       <img src="../assets/gallery/a4.jpg" alt="автофото Гаджидадаев" class="gallery__item auto" @click="openImage($event)">
-      <img src="../assets/gallery/a23.jpg" alt="автофото Гаджидадаев" class="gallery__item auto" @click="close()">
+      <img src="../assets/gallery/a23.jpg" alt="автофото Гаджидадаев" class="gallery__item auto" @click="openImage($event)">
     </div>
   </div>
-  <div class="modal" v-if="openImg == true"></div>
-  <div class="overlay" v-if="openImg == true"></div>
 
 
 
@@ -43,45 +41,18 @@
 export default {
   data() {
     return {
-      openImg: false
     }
   },
   methods: {
     openImage(e) {
-      this.openImg = true;
-      if(this.openImg) {
-        let modal = $('.modal');
-        let overlay = $('.overlay');
-        $(e.target).clone().appendTo($(modal));
-        $(modal).children().css({"top": "auto", "left": "auto", "height": "100%", "position": "relative"});
-        overlay.addClass('open');
-        modal.addClass('open');
-      }
-    },
-    close() {
-      // this.openImg = !this.openImg;
-      console.log(1);
-    // let modal = $('.modal');
-    // let overlay = $('.overlay');
-
-    //   $('.overlay').click(function () {
-    //       $(modal).children().remove();
-    //       overlay.removeClass('open');
-    //       modal.removeClass('open');
-    //   });
-    //
-    //   $('.modal').click(function () {
-    //       $(modal).children().remove();
-    //       overlay.removeClass('open');
-    //       modal.removeClass('open');
-    //   });
+      let modal = $('.modal');
+      let overlay = $('.overlay');
+      $(e.target).clone().appendTo($(modal));
+      $(modal).children().css({"top": "auto", "left": "auto", "height": "100%", "position": "relative"});
+      overlay.addClass('open');
+      modal.addClass('open');
     }
-  },
-   // computed: {
-   //   closeModal() {
-   //     if()
-   //   }
-   // }
+  }
 }
 </script>
 

@@ -38,9 +38,29 @@
         <div class="header__inner">
           <h1>Mukhtar <br> Gadzhidadaev</h1>
           <h2>Профессиональный фотограф</h2>
-          <a href="#">Портфолио</a>
+          <router-link :to="{ name: 'wedding'}">
+            <img src="../assets/photo_link.png" alt="portfolio">
+            Портфолио
+          </router-link>
         </div>
-        <img src="../assets/header.png" alt="">
+        <img src="../assets/header.png" alt="Гаджидадаев" title="Гаджидадаев">
+        <ul class="header_soc">
+          <li><a href="">
+            <img src="../assets/instagram.png" target="_blank" alt="Gadzhidadaev">
+          </a></li>
+          <li><a href="">
+            <img src="../assets/youtube.png" target="_blank" alt="Gadzhidadaev">
+          </a></li>
+          <li><a href="">
+            <img src="../assets/telegram.png" target="_blank" alt="Gadzhidadaev">
+          </a></li>
+          <li><a href="">
+            <img src="../assets/vk.png" target="_blank" alt="Gadzhidadaev">
+          </a></li>
+          <li><a href="">
+            <img src="../assets/whatsapp.png" target="_blank" alt="Gadzhidadaev">
+          </a></li>
+        </ul>
       </header>
  <!-- about-me  -->
 		<div class="about-me" id="about-me">
@@ -67,7 +87,7 @@
 				<div class="service__items">
           <router-link :to="{ name: 'wedding'}">
             <div class="service__item">
-							<img src="../assets/wedding.jpg" alt="">
+							<img src="../assets/wedding.jpg" title="Гаджидадаев свадебный" alt="свадебные">
 							<div>
 								<h4>Свадебные фотографии</h4>
 							</div>
@@ -75,7 +95,7 @@
           </router-link>
           <router-link :to="{ name: 'landscape'}">
             <div class="service__item">
-							<img src="../assets/landscape.jpg" alt="">
+							<img src="../assets/landscape.jpg" alt="пейзаж" title="Гаджидадаев пейзаж">
 							<div>
 								<h4>Пейзаж</h4>
 							</div>
@@ -83,7 +103,7 @@
           </router-link>
           <router-link :to="{ name: 'car'}">
             <div class="service__item">
-							<img src="../assets/auto.jpg" alt="">
+							<img src="../assets/auto.jpg" title="Гаджидадаев Автофото" alt="Автофото">
 							<div>
 								<h4>Автофото</h4>
 							</div>
@@ -91,7 +111,7 @@
           </router-link>
           <router-link :to="{ name: 'people'}">
             <div class="service__item">
-							<img src="../assets/people.jpg" alt="">
+							<img src="../assets/people.jpg" title="Гаджидадаев Люди" alt="Люди">
 							<div>
 								<h4>Люди (мероприятия)</h4>
 							</div>
@@ -107,17 +127,17 @@
 			<div class="works">
 				<div class="portfolio__inner">
 					<div class="portfolio__photo">
-						<img src="../assets/l1.jpg" alt="">
-						<img src="../assets/l2.jpg" alt="">
-						<img src="../assets/l3.jpg" alt="">
-						<img src="../assets/l4.jpg" alt="">
-						<img src="../assets/l5.jpg" alt="">
-						<img src="../assets/l6.jpg" alt="">
-						<img src="../assets/l7.jpg" alt="">
+						<img src="../assets/l1.jpg" alt="Гаджидадаев фото" title="Gadzhidadaev">
+						<img src="../assets/l2.jpg" alt="Гаджидадаев фото" title="Gadzhidadaev">
+						<img src="../assets/l3.jpg" alt="Гаджидадаев фото" title="Gadzhidadaev">
+						<img src="../assets/l4.jpg" alt="Гаджидадаев фото" title="Gadzhidadaev">
+						<img src="../assets/l5.jpg" alt="Гаджидадаев фото" title="Gadzhidadaev">
+						<img src="../assets/l6.jpg" alt="Гаджидадаев фото" title="Gadzhidadaev">
+						<!-- <img src="../assets/l7.jpg" alt="">
 						<img src="../assets/l8.jpg" alt="">
-						<img src="../assets/l9.jpg" alt="">
+						<img src="../assets/l9.jpg" alt=""> -->
 					</div>
-					<a href="gallery.html" class="portfolio__show-all">Перейти в галерею</a>
+					<!-- <a href="gallery.html" class="portfolio__show-all">Перейти в галерею</a> -->
 				</div>
 			</div>
 		</div>
@@ -141,11 +161,11 @@
 
  <!-- contacts  -->
 		<div class="contacts" id="contacts">
-			<div class="contacts__soc">
+			<!-- <div class="contacts__soc">
 				<div class="contacts__soc__item soc__inst"><a href="https://www.instagram.com/mukhtar_gadzhidadaev/"  target="_blank"><i class="fa fa-instagram"></i>instagram</a></div>
 				<div class="contacts__soc__item soc__fb"><a href="https://www.facebook.com/profile.php?id=100003203017081"  target="_blank"><i class="fa fa-facebook"></i>facebook</a></div>
 				<div class="contacts__soc__item soc__vk"><a href="https://vk.com/gadzhidadaev003"  target="_blank"><i class="fa fa-vk"></i>vkontakte</a></div>
-			</div>
+			</div> -->
 			<div class="contacts__map">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6991.497842226445!2d46.70722579441256!3d42.54334245996748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1517558780080" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
@@ -154,6 +174,16 @@
 </template>
 
 <script>
+// $(function() {
+//     $(".nav").hide(0);
+// });
+// $(window).on("scroll", function() {
+//   if($(this).scrollTop() < 400) {
+//     $(".nav").slideUp(100);
+//   } else {
+//     $(".nav").slideDown(100);
+//   }
+// })
 let token = '5501043384.1677ed0.6f7fd36a2ebc4e2f840a939d729421a8',
     userid = 228142647,
     kolichestvo = 9;
@@ -177,15 +207,6 @@ $.ajax({
 	}
 });
 export default {
-  mounted() {
-    // new Slider({
-    //   images: '.header__slide',
-    //   btnPrev: '.slide_prew',
-    //   btnNext: '.slide_next',
-    //   auto: true,
-    //   rate: 7000
-    // });
-  }
 }
 </script>
 
