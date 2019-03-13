@@ -105,13 +105,14 @@ export default {
         }
         .menu {
             margin-top: 13px;
+            display: block;
             line-height: 50px;
             width: 70%;
             z-index: 3;
             position: relative;
             float: right;
             .menu__items {
-                float: right;
+              position: relative;
             }
             &__item {
                 display: inline-block;
@@ -193,8 +194,14 @@ export default {
         display:block;
         height:inherit;
     }
+  @media (max-width: 1200px) {
+    .nav .menu {
+        float: left;
+        width: 63%;
+    }
+  }
 
-    @media (max-width: 700px) {
+    @media (max-width: 900px) {
 
       .header_burger {
         display: block;

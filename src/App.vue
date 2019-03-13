@@ -136,6 +136,8 @@ fieldset {border: 0; margin: 0;padding: 0;}textarea {resize: vertical;}.chromefr
         width: 700px;
         justify-content: space-around;
         margin: 0 auto;
+        z-index: 2;
+        position: relative;
         padding-top: 50px;
         a {
           font-size: 18px;

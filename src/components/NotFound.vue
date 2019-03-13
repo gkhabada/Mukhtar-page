@@ -47,6 +47,13 @@ export default {
     color: #23c869;
     font-weight: 400;
     font-size: 20px;
-    /* text-shadow: 1px 1px 10px rgba(0,0,0, 0.2); */
+  }
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 110px;
+    }
+    h1 img {
+      width: 160px;
+    }
   }
 </style>

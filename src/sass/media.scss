@@ -9,6 +9,8 @@
 }
 
 @media (max-width: 1290px) {
+
+
   .header_soc {
       width: 70%;
       left: 15%;
@@ -22,6 +24,21 @@
   .about-me .about-me__info .about-me__info__inner {
     width: 96%;
     padding: 2%;
+  }
+
+  .service .service__inner .service__items {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    a {
+      width: 40%;
+      .service__item {
+        margin: 0 0 30px 0;
+        width: 100%;
+        img {
+          object-fit: cover;
+        }
+      }
+    }
   }
 
 }
@@ -60,22 +77,6 @@
         padding: 0;
         p {
           margin-bottom: 15px;
-        }
-      }
-    }
-  }
-
-
-  .service .service__inner .service__items {
-    flex-wrap: wrap;
-    justify-content: space-around;
-    a {
-      width: 40%;
-      .service__item {
-        margin: 0 0 30px 0;
-        width: 100%;
-        img {
-          object-fit: cover;
         }
       }
     }

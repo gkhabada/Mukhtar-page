@@ -60,6 +60,5 @@ export default {
   .gallery .gallery__photo .gallery__item {
     width: 23%;
     height: auto;
-    padding-bottom: 
   }
 </style>
