@@ -11,34 +11,9 @@
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-
-
-
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      $( document ).ready(function() {
-        var w = $('.portfolio__photo img').css('width');
-        var h = parseInt(w) / 100 *67;
-        $('.portfolio__photo img').css('height', h + 'px');
-        $(window).resize(function(){
-          var w = $('.portfolio__photo img').css('width');
-          var h = parseInt(w) / 100 *67;
-          $('.portfolio__photo img').css('height', h + 'px');
-        });
-
-        $(window).on("scroll resize", function() {
-            var o = $(window).scrollTop() / ($(document).height() - $(window).height());
-            $(".progress-bar").css({
-                "width": (100 * o | 0) + "%"
-            });
-            $('progress')[0].value = o;
-        })
-      });
-    </script>
   </head>
   <body>
     <div id="app"></div>
-
-    <!-- built files will be auto injected -->
   </body>
 </html>

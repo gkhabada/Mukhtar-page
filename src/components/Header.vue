@@ -24,6 +24,7 @@
           </router-link>
         </ul>
       </div>
+      <img src="http://romeo-studio.ru/img/menu-icon.png" alt="" @click="mobMenu()" class="header_burger">
     </div>
     <div class="nav__bg"></div>
     <progress value="0">
@@ -45,6 +46,9 @@ export default {
       $(modal).children().remove();
       overlay.removeClass('open');
       modal.removeClass('open');
+    },
+    mobMenu() {
+      $('.menu').slideToggle(200);
     }
   }
 }
@@ -54,6 +58,10 @@ export default {
 
   $medium: 'mullermedium';
   $extrabold: 'mullerextrabold';
+    .header_burger {
+      display: none;
+      z-index: 2;
+    }
     .nav {
         height: 70px;
         padding-top: 0px;
@@ -66,7 +74,7 @@ export default {
             width: 100%;
             height: 100%;
             position: absolute;
-            background-color: rgba(#000, 0.55);
+            background-color: rgba(#000, 0.65);
             z-index: 1;
             top: 0;
             left: 0;
@@ -184,6 +192,41 @@ export default {
         width:0%;
         display:block;
         height:inherit;
+    }
+
+    @media (max-width: 900px) {
+
+      .header_burger {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 50px;
+        height: 50px;
+      }
+      .nav {
+        z-index: 11;
+        .logo {
+            left: 15px;
+        }
+        .menu {
+          width: 100%;
+          display: none;
+          padding-top: 20px;
+          padding-bottom: 10px;
+          margin-top: 0;
+          background-color: rgba(#000, 0.85);
+          .menu__items {
+            width: 100%;
+            li {
+              width: 100%;
+              box-sizing: border-box;
+              padding-left: 25px;
+            }
+          }
+        }
+      }
+
     }
 
 </style>

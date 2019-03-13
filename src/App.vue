@@ -7,9 +7,26 @@
 </template>
 
 <script>
-// import './assets/sass/screen.scss'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
+$( document ).ready(function() {
+  var w = $('.portfolio__photo img').css('width');
+  var h = parseInt(w) / 100 *67;
+  $('.portfolio__photo img').css('height', h + 'px');
+  $(window).resize(function(){
+    var w = $('.portfolio__photo img').css('width');
+    var h = parseInt(w) / 100 *67;
+    $('.portfolio__photo img').css('height', h + 'px');
+  });
+
+  $(window).on("scroll resize", function() {
+      var o = $(window).scrollTop() / ($(document).height() - $(window).height());
+      $(".progress-bar").css({
+          "width": (100 * o | 0) + "%"
+      });
+      $('progress')[0].value = o;
+  })
+});
 export default {
   name: 'app',
   data () {

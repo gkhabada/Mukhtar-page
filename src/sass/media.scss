@@ -1,0 +1,147 @@
+@media (max-width: 1700px) {
+  .header__inner {
+    width: 90%;
+    top: 95px;
+  }
+  .header__img {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1290px) {
+  .header_soc {
+      width: 70%;
+      left: 15%;
+  }
+  .about-me .about-me__photo {
+      min-width: 40%;
+  }
+  .about-me .about-me__info {
+    min-width: 59.999%;
+  }
+  .about-me .about-me__info .about-me__info__inner {
+    width: 96%;
+    padding: 2%;
+  }
+}
+
+@media (max-width: 990px) {
+
+
+  .header_soc {
+      width: 90%;
+      left: 5%;
+      li {
+        img {
+          -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+      }
+    }
+  }
+  .header__inner h1 {
+    font-size: 60px;
+  }
+
+  .about-me {
+    height: auto;
+    flex-wrap: wrap;
+    .about-me__photo {
+      min-width: 100%;
+      height: 350px;
+      background-position: center -130px;
+    }
+    .about-me__info {
+      height: auto;
+      padding: 30px;
+      min-width: 100%;
+      .about-me__info__inner {
+        width: 100%;
+        padding: 0;
+        p {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+
+  .service .service__inner .service__items {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    a {
+      width: 40%;
+      .service__item {
+        margin: 0 0 30px 0;
+        width: 100%;
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .video__items {
+    justify-content: center;
+    flex-wrap: wrap;
+    .video__item {
+      margin: 0 0 30px 0;
+      width: 100%;
+      padding-bottom: 56.25%;
+    }
+  }
+
+  .contacts .contacts__map {
+      height: 300px;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .nav {
+    display: none;
+  }
+  .header {
+    padding-top: 30px;
+    .menu__items {
+      display: none;
+    }
+    .header__inner {
+      h1 {
+      font-size: 40px;
+      }
+      h2 {
+        font-size: 28px;
+      }
+    }
+  }
+  .header__img {
+    width: 100%;
+    bottom: 58px;
+  }
+  .header_soc {
+      height: 70px;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      border-radius: 0;
+      li {
+        img {
+          width: 30px;
+          height: 30px;
+      }
+    }
+  }
+  .about-me .about-me__photo {
+      height: 300px;
+      background-position: center -70px;
+  }
+
+  .service .service__inner .service__items a {
+      width: 80%;
+  }
+
+  .portfolio {
+    display: none;
+  }
+
+}

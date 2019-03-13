@@ -51,4 +51,11 @@ export default {
         }
     }
 }
+
+@media (max-width: 700px) {
+  .footer_wrapper .footer h4[data-v-40ab164b] {
+      padding-top: 15px;
+      line-height: 30px;
+  }
+}
 </style>
