@@ -113,12 +113,13 @@ fieldset {border: 0; margin: 0;padding: 0;}textarea {resize: vertical;}.chromefr
       background-color: #fff;
       width: 100%;
       height: 750px;
+
       .menu__items {
         display: flex;
         width: 700px;
         justify-content: space-around;
         margin: 0 auto;
-        padding-top: 30px;
+        padding-top: 50px;
         a {
           font-size: 18px;
           color: #333;
@@ -131,10 +132,11 @@ fieldset {border: 0; margin: 0;padding: 0;}textarea {resize: vertical;}.chromefr
           }
         }
       }
+
       &__inner {
         position: relative;
         margin: 0 auto;
-        top: 200px;
+        top: 180px;
         width: 70%;
         h1 {
           font-size: 72px;
@@ -178,10 +180,10 @@ fieldset {border: 0; margin: 0;padding: 0;}textarea {resize: vertical;}.chromefr
           }
         }
       }
-      img{
+      &__img{
         position: absolute;
         right: 0;
-        bottom: -27px;
+        bottom: -2px;
       }
       &_soc {
         z-index: 2;
@@ -197,8 +199,8 @@ fieldset {border: 0; margin: 0;padding: 0;}textarea {resize: vertical;}.chromefr
         display: flex;
         justify-content: space-around;
         li {
+          padding-top: 20px;
           position: relative;
-          top: -5px;
             img {
               position: relative;
               width: 50px;

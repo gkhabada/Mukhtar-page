@@ -43,7 +43,7 @@
             Портфолио
           </router-link>
         </div>
-        <img src="../assets/header.png" alt="Гаджидадаев" title="Гаджидадаев">
+        <img class="header__img" src="../assets/header.png" alt="Гаджидадаев" title="Гаджидадаев">
         <ul class="header_soc">
           <li><a href="">
             <img src="../assets/instagram.png" target="_blank" alt="Gadzhidadaev">
