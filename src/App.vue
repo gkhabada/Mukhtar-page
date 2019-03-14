@@ -775,6 +775,29 @@ fieldset {border: 0; margin: 0;padding: 0;}textarea {resize: vertical;}.chromefr
   .open {
       display: flex;
   }
+@media (max-width: 1100px) {
+  .gallery .gallery__photo .gallery__item {
+    width: 31%;
+    margin: 0 0 18px 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .gallery .gallery__photo .gallery__item {
+    width: 48%;
+  }
+  .gallery .gallery__text {
+    font-size: 15px;
+    margin: 10px auto;
+}
+}
+
+@media (max-width: 500px) {
+  .gallery .gallery__photo .gallery__item {
+    width: 98%;
+  }
+}
+
 
   @import './sass/media.scss';
 

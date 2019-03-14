@@ -38,6 +38,13 @@
 </template>
 
 <script>
+ $(window).resize(function() {
+    if ($(window).width() >= '900'){
+     $('.menu__link').on('click', function(){
+       $('.menu').hide(100)
+     })
+    }
+  });
 export default {
   methods: {
     close() {
@@ -123,8 +130,6 @@ export default {
                 transition: 0.2s;
                 border-bottom: 3px solid transparent;
                 &:hover {
-                    -webkit-transform: scale(1.1);
-                    transform: scale(1.1);
                     top: 1px;
                     transition: 0.2s;
                     border-bottom: 3px solid #fff;

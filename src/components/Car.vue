@@ -57,8 +57,8 @@ export default {
 </script>
 
 <style lang="scss" >
-  .gallery .gallery__photo .gallery__item {
-    width: 23%;
-    height: auto;
-  }
+  // .gallery .gallery__photo .gallery__item {
+  //   width: 23%;
+  //   height: auto;
+  // }
 </style>
