@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="not-found">
-      <h1>4<img src="../assets/camera.png" alt="">4</h1>
+      <h1>4<img src="../assets/camera.webp" alt="0">4</h1>
       <p>Страница не найдена</p>
       <router-link :to="{ name: 'home'}">Перейти на главную</router-link>
     </div>

@@ -9,14 +9,12 @@
 }
 
 @media (max-width: 1290px) {
-
-
   .header_soc {
-      width: 70%;
-      left: 15%;
+    width: 70%;
+    left: 15%;
   }
   .about-me .about-me__photo {
-      min-width: 40%;
+    min-width: 40%;
   }
   .about-me .about-me__info {
     min-width: 59.999%;
@@ -40,19 +38,16 @@
       }
     }
   }
-
 }
 
 @media (max-width: 990px) {
-
-
   .header_soc {
-      width: 90%;
-      left: 5%;
-      li {
-        img {
-          -webkit-filter: grayscale(0);
-          filter: grayscale(0);
+    width: 90%;
+    left: 5%;
+    li {
+      img {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
       }
     }
   }
@@ -93,9 +88,8 @@
   }
 
   .contacts .contacts__map {
-      height: 300px;
+    height: 300px;
   }
-
 }
 
 @media (max-width: 700px) {
@@ -106,7 +100,7 @@
     }
     .header__inner {
       h1 {
-      font-size: 40px;
+        font-size: 40px;
       }
       h2 {
         font-size: 28px;
@@ -118,39 +112,38 @@
     bottom: 58px;
   }
   .header_soc {
-      height: 70px;
-      bottom: 0;
-      width: 100%;
-      left: 0;
-      border-radius: 0;
-      li {
-        img {
-          width: 30px;
-          height: 30px;
+    height: 70px;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+    li {
+      img {
+        width: 30px;
+        height: 30px;
       }
     }
   }
   .about-me .about-me__photo {
-      height: 300px;
-      background-position: center -70px;
+    height: 300px;
+    background-position: center -70px;
   }
 
   .service .service__inner .service__items a {
-      width: 80%;
+    width: 80%;
   }
 
   .portfolio {
     display: none;
   }
-
 }
 @media (max-width: 500px) {
   .header {
     height: 650px;
   }
   .about-me .about-me__photo {
-      height: 300px;
-      background-position: center;
+    height: 300px;
+    background-position: center;
   }
   .video h2 {
     font-size: 30px;

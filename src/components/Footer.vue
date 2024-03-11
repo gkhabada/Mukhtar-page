@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <div class="footer_wrapper">
     <div class="footer">
       <h4>© Front-end разработчик GadzhidadaevGR <a href="http://gkhabada.h1n.ru/" target="_blank">Gkhabada</a>  2018 -  {{ nowDate }} </h4>

@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <nav class="nav">
     <div class="nav__inner">
       <router-link :to="{ name: 'home'}">

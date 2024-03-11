@@ -1,30 +1,7 @@
-# Mukhtar-page
-Mukhtar-page
-Это сайт делал сначала статический html/css/js и на ходится на ветке "master"
+# Vue 3 + Vite
 
-В дальнейшем был перенесен на vue.js с небольшими изменениями в структуре и находится на ветке "vue"
+This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-Сам сайт можете посмотреть по ссылке gkhabada.h1n.ru
-=======
-# mukhtar
+## Recommended IDE Setup
 
-> Personal site of photograph Mukhtar Gadzhidadaev
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
+- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).

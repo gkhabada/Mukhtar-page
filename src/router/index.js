@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Home from '@/components/Home.vue'
-import Car from '@/components/Car.vue'
-import Landscape from '@/components/Landscape.vue'
-import Wedding from '@/components/Wedding.vue'
-import People from '@/components/People.vue'
-import NotFound from '@/components/NotFound.vue'
+import Home from '../components/Home.vue'
+import Car from '../components/Car.vue'
+import Landscape from '../components/Landscape.vue'
+import Wedding from '../components/Wedding.vue'
+import People from '../components/People.vue'
+import NotFound from '../components/NotFound.vue'
 
 Vue.use(Router)
 

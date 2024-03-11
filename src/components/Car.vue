@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <div id="wrapper" class="wrapper__gallery" @click="openImg = false">
 
   <div class="gallery">
