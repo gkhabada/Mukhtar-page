@@ -41,11 +41,12 @@ export default new Router({
       path: '/404',
       name: '404',
       component: NotFound,
-    }, {
+    },
+    {
       path: '*',
       redirect: '/404'
     }
   ],
-  base: '/Mukhtar-page/',
+  base: '/mukhtar/',
   mode: 'history'
 })
