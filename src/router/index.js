@@ -46,5 +46,6 @@ export default new Router({
       redirect: '/404'
     }
   ],
+  base: '/Mukhtar-page/',
   mode: 'history'
 })
